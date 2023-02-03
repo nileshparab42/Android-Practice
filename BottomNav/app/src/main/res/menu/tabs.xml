@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/group"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Group" />
+
+    <item
+        android:id="@+id/table"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Table" />
+
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/baseline_home_24"
+        android:title="chat" />
+</menu>

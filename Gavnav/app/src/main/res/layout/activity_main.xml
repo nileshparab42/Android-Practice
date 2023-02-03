@@ -1,0 +1,27 @@
+<com.gauravk.bubblenavigation.BubbleNavigationConstraintView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_navigation_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="380dp"
+    android:background="@color/white"
+    android:elevation="4dp"
+    android:padding="12dp"
+    app:bnc_mode="spread"
+    tools:ignore="MissingClass">
+
+    <com.gauravk.bubblenavigation.BubbleToggleView
+        android:id="@+id/c_item_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bt_active="true"
+        app:bt_colorActive="@color/search_active"
+        app:bt_colorInactive="@color/search_inactive"
+        app:bt_icon="@drawable/ic_restaurant"
+        app:bt_shape="@drawable/transition_background_drawable_restaurant"
+        app:bt_title="@string/restaurant"
+        app:bt_padding="@dimen/internal_padding"
+        app:bt_titlePadding="@dimen/title_padding" />
+
+    <!-- Add more child items here - max upto 5 -->
+
+</com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
