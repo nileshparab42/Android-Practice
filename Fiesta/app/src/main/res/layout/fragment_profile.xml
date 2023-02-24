@@ -198,19 +198,18 @@
             style="@android:style/Widget.Button"
             android:layout_width="300dp"
             android:layout_height="50dp"
-            android:background="#DA0F0F"
+            android:background="@drawable/background_btn"
             android:fontFamily="@font/poppins_bold"
-            android:onClick="onClickButton1"
             android:text="LOGOUT"
             android:textAlignment="center"
             android:textColor="#F6F6F6"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView"
-            app:layout_constraintVertical_bias="0.173" />
+            app:layout_constraintVertical_bias="0.506" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
