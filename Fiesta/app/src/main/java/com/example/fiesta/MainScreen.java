@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.provider.DocumentsContract;
 import android.sax.RootElement;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.fiesta.databinding.ActivityMainBinding;
@@ -28,8 +30,6 @@ public class MainScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
 
         super.onCreate(savedInstanceState);
         binding = MainScreenBinding.inflate(getLayoutInflater());
@@ -81,6 +81,21 @@ public class MainScreen extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+//    public void onClickCom(View v) {
+//        Intent com = new Intent(MainScreen.this,Group.class);
+//        startActivity(com);
+//    }
+
+    public void onClickReadme(View view) {
+        Intent iEve = new Intent(MainScreen.this,Event.class);
+        startActivity(iEve);
+    }
+
+    public void onClickPay(View view) {
+        Intent iTic = new Intent(MainScreen.this,Ticket.class);
+        startActivity(iTic);
     }
 }
 

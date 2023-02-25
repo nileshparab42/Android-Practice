@@ -1,7 +1,9 @@
 package com.example.fiesta;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -14,6 +16,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class Groups extends Fragment {
+
+    CardView card;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +63,16 @@ public class Groups extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_groups, container, false);
+        View v= inflater.inflate(R.layout.fragment_groups, container, false);
+        CardView card = (CardView) v.findViewById(R.id.card1);
+        card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent com = new Intent(getActivity(),Group.class);
+                startActivity(com);
+            }
+        });
+        return v;
     }
+
 }
