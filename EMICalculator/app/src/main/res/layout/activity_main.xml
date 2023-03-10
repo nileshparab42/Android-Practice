@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etLoanAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="   LoanAmount"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_200"
+            android:inputType="numberDecimal"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/etInterest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="   Annuan Interest Rate"
+            android:inputType="numberDecimal"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/sp1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dialog" />
+
+        <EditText
+            android:id="@+id/e1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter value"
+            android:inputType="numberDecimal"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:paddingVertical="20dp"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/etAns"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:ems="10"
+            android:hint="  Answer"
+            android:textColor="#fff"
+            android:textSize="25sp" >
+
+            <requestFocus />
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

@@ -26,7 +26,7 @@ public class AuthScreen extends AppCompatActivity {
 
     // Implement the OnClickListener callback
     public void onClickButton1(View v) {
-        Intent iHome = new Intent(AuthScreen.this,MainScreen.class);
+        Intent iHome = new Intent(AuthScreen.this,LoginScreen.class);
         startActivity(iHome);
     }
 
