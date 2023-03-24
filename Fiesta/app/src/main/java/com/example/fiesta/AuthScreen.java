@@ -31,7 +31,7 @@ public class AuthScreen extends AppCompatActivity {
     }
 
     public void onClickButton2(View v) {
-        Intent iHome = new Intent(AuthScreen.this,MainScreen.class);
+        Intent iHome = new Intent(AuthScreen.this,SignupScreen.class);
         startActivity(iHome);
     }
 
